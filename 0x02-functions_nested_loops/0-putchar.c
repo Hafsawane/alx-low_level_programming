@@ -1,8 +1,8 @@
 #include<stdio.h>
-#include<main.h>
+#include"main.h"
 /**
-*main-Entry point
-*Description: prints -putchar
+*main - print _putchar
+*Description: prints (-putchar)
 *Return: Always 0
 */
 
