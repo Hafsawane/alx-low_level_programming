@@ -1,17 +1,26 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * main - check the code.
- **
- *Return: Always 0.
+ *  print_times_table - hieheieei
+ *  @n: is amonster
  */
-int main(void)
+void print_times_table(int n)
 {
-print_times_table(3);
-_putchar('\n');
-print_times_table(5);
-_putchar('\n');
-print_times_table(98);
-_putchar('\n');
-print_times_table(12);
-return (0);
+int i, j;
+if (n <= 15 && n >= 0)
+{
+for (i = 0; i <= n; i++)
+{
+for (j = 0; j <= n; j++)
+{
+if (j != 0)
+printf("%3d", i * j);
+else
+printf("0");
+if (j != n)
+printf(", ");
+}
+printf("\n");
+}
+}
 }
