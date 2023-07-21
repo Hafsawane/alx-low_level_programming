@@ -10,8 +10,8 @@ if (n <= 0)
 putchar('\n');
 else
 {
-int line;
-for (line = 1; line <= n; line++)
+int i;
+for (i = 0; i < n; i++)
 putchar('-');
 putchar('\n');
 }
