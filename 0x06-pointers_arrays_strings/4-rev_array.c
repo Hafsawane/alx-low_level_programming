@@ -1,11 +1,11 @@
 #include "main.h"
 
-/*
- * reverse_array - Reverses the content of an array of integers
- *
- * @a: Array of integers
- * @n: Number of inputs
+/**
+ * reverse_array - reverses an array of integers
+ * @a: array to be reversed
+ * @n: number of elements in the array
  */
+
 void reverse_array(int *a, int n)
 {
 int i;

@@ -1,15 +1,16 @@
 #include "main.h"
 /*
-*_strncpy - copy Number of strings from source into Destinse
-* @dest: destination string
-* @src: source string
-* @n: Number of bytes to copy
-* Return: pointer to the resulting string
+ *_strncpy - copies a string
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to copy
+ *
+ * Return: pointer to the resulting string
 */
 char *_strncpy(char *dest, char *src, int n)
 {
 int i = 0;
-while (i < n && src[i] != '\0')
+while (src[i] != '\0' && i < n)
 {
 dest[i] = src[i];
 i++;
