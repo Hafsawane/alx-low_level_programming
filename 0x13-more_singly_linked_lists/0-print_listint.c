@@ -1,21 +1,25 @@
 #include "lists.h"
 
 /**
- * listint_len - function that returns the number
- * of elements in a linked lists
- * @h: linked list of type listint_t to traverse
- *
- * Return: nmbr of nodes
+ * print_listint - function that prints the elements of a list
+ * @h: pointer
+ * Return: the number of nodes
  */
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
-	size_t n = 0;
+	size_t nodeC = 1;
 
-	while (h)
+	if (h == NULL)
+		return (0);
+
+	while (h->next != NULL)
 	{
-		n++;
+		printf("%d\n", h->n);
 		h = h->next;
+		nodeC++;
 	}
 
-	return (n);
+	printf("%d\n", h->n);
+
+	return (nodeC);
 }
