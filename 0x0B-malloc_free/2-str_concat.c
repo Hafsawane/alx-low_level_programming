@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
-	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
+	unsigned int i = 0, len1 = 0, len2 = 0;
 
 	while (s1 && s1[len1])
 		len1++;
@@ -23,7 +23,6 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	i = 0;
-	j = 0;
 
 	if (s1)
 	{
@@ -34,3 +33,4 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 }
+
