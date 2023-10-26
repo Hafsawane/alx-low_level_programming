@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * binary_to_uint _ convert a binary number tring to an unsigned int.
  *
@@ -19,13 +20,12 @@ unsigned int binary_to_uint(const char *b)
 	while (*b)
 {
 	if (*b != '0' && *b != '1')
-	{
+
 		return (0);
-	}
+
 	else
-	{
+
 		number = number * 2 + (*b++ - '0');
-			return (number);
-	}
 }
+			return (number);
 }
