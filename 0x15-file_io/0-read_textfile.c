@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * read_textfile - reads a text file and prints the letters
  * @filename: filename.
